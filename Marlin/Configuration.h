@@ -498,7 +498,7 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
-#define TEMP_SENSOR_BED 75   // gMax-1.5+ users please note:   This is a Roxy modification to the printer.   I want
+#define TEMP_SENSOR_BED 0   // gMax-1.5+ users please note:   This is a Roxy modification to the printer.   I want
                              // to print on glass.   And I'm using a 400mm x 400mm silicon heat pad powered through
                              // a Fortek SSR to do it.   If you are using an unaltered gCreate machine, this needs
                              // to be set to 0
@@ -1450,7 +1450,7 @@
  * RAMPS-based boards use SERVO3_PIN for the first runout sensor.
  * For other boards you may need to define FIL_RUNOUT_PIN, FIL_RUNOUT2_PIN, etc.
  */
-#define FILAMENT_RUNOUT_SENSOR
+//#define FILAMENT_RUNOUT_SENSOR
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define FIL_RUNOUT_ENABLED_DEFAULT true // Enable the sensor on startup. Override with M412 followed by M500.
   #define NUM_RUNOUT_SENSORS   1          // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
