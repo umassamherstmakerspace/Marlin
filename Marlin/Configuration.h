@@ -139,8 +139,8 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  //#define MOTHERBOARD BOARD_RAMPS_14_EEF
-  #define MOTHERBOARD BOARD_RAMPS_14_EFB  // gMax users please note: This is a Roxy modification. I print on glass and
+  #define MOTHERBOARD BOARD_RAMPS_14_EEF
+  //#define MOTHERBOARD BOARD_RAMPS_14_EFB  // gMax users please note: This is a Roxy modification. I print on glass and
                                           // use Marlin to control the bed temperature. So, if you have a single nozzle
                                           // machine, this will work fine for you. Just set the TEMP_SENSOR_BED to 0 down
                                           // below so Marlin doesn't mess with the bed temp.
@@ -561,7 +561,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 245
+#define HEATER_0_MAXTEMP 300
 #define HEATER_1_MAXTEMP 245
 #define HEATER_2_MAXTEMP 245
 #define HEATER_3_MAXTEMP 245
